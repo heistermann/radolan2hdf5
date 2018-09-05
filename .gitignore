@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+missing_ry.txt
+*.conf
+tmp*
