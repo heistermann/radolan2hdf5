@@ -78,6 +78,8 @@ for month in months:
         dt_day = dt.datetime(month.year, month.month, day)
         if dt_day > end:
             break
+        if dt_day < start:
+            continue
         tfpath = os.path.join(tmpdir, dailytarfile % (month.year, month.month, day))
         # Extract 5 minute data from one day
         try:
